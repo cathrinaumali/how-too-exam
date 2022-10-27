@@ -1,0 +1,25 @@
+.home-container {
+  .logo-col {
+    background-color: #172843;
+    .logo-container {
+      height: fit-content;
+      svg {
+        width: 5.2em;
+      }
+    }
+    .intro {
+      color: #fff;
+      padding: 0.3em;
+      h1 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    }
+  }
+  .bg-image-col {
+    background-image: url("./../../assets/home1-bg.jpg");
+  }
+}
