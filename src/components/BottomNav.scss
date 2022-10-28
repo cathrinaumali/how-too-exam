@@ -1,16 +1,26 @@
 section {
-  a {
-    span.tab {
-      padding: 0.6em 1em;
-      font-family: "Montserrat", sans-serif;
-      &:hover,
-      &.active {
-        border-bottom: 3px solid #55c6d7;
+  div#tabs {
+    a {
+      display: flex;
+      div.tab {
+        padding: 0.6em 1em;
+        font-family: "Montserrat", sans-serif;
+        width: fit-content;
+        text-align: center;
+        display: flex;
+        gap: 2px;
+        img {
+          height: 1.1em;
+        }
+        &:hover,
+        &.active {
+          border-bottom: 3px solid #55c6d7;
+        }
       }
-    }
-    &.active {
-      span.tab {
-        border-bottom: 3px solid #55c6d7;
+      &.active {
+        div.tab {
+          border-bottom: 3px solid #55c6d7;
+        }
       }
     }
   }

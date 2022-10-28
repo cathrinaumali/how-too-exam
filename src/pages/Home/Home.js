@@ -3,13 +3,19 @@ import React from "react";
 import "./Home.scss";
 import { ReactComponent as LogoSvg } from "./../../assets/logo.svg";
 import Layout from "./../../components/Layout";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <Layout>
-      <div className="grid p-6 text-6xl border-1 border-gray-300 col-span-2 logo-col">
-        <div className="mx-auto mt-4 logo-container">
-          <LogoSvg />
+    <Layout IDName={"home-1-container"}>
+      <div
+        className="flex flex-col col-span-2 p-6 text-6xl border-1 border-gray-300  logo-col"
+        id="hm"
+      >
+        <div className="mx-auto logo-container">
+          <Link to="/">
+            <LogoSvg />
+          </Link>
         </div>
         <div className="text-left	intro ">
           <h1 className="mb-4">lOREM iPSUM</h1>
@@ -35,7 +41,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="col-span-5 w-full h-full bg-image-col bg-fixed bg-no-repeat bg-cover bg-center"></div>
+      <div className="grid col-span-5 w-full h-full bg-image-col bg-fixed bg-no-repeat bg-cover bg-center"></div>
     </Layout>
   );
 };

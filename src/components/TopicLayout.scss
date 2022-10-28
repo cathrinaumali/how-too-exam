@@ -1,0 +1,27 @@
+#topic-container {
+  .topic-logo-col {
+    background-color: #172843;
+    .logo-container {
+      height: fit-content;
+      margin-top: 2rem;
+      svg {
+        width: 3em;
+      }
+    }
+    .intro {
+      color: #fff;
+      padding: 0.3em;
+      margin-top: 6rem;
+      h1 {
+        font-size: 50px;
+        font-weight: 900;
+        font-family: "Nunito Sans", sans-serif;
+      }
+      p.button-svg {
+        svg {
+          cursor: pointer !important;
+        }
+      }
+    }
+  }
+}

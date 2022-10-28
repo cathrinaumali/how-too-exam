@@ -1,48 +1,83 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
-import Topic1 from "./pages/Topic1";
-import Topic2 from "./pages/Topic2";
-import Topic3 from "./pages/Topic3";
-import Topic4 from "./pages/Topic4";
-import Topic5 from "./pages/Topic5";
+import Landing from "./pages/Landing"; 
 import AccordionPage from "./pages/AccordionPage";
+import TopicLayout from "./components/TopicLayout";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
+      element: <Landing />,
+    },
+    {
+      path: "home",
       element: <Home />,
     },
     {
       path: "topic-1",
-      element: <Topic1 />,
+      element: (
+        <TopicLayout
+          bgImage={{
+            backgroundImage: `url(${require("./assets/topic-bg-1.jpg")})`,
+          }}
+        />
+      ),
     },
     {
       path: "topic-2",
-      element: <Topic2 />,
+      element: (
+        <TopicLayout
+          bgImage={{
+            backgroundImage: `url(${require("./assets/topic-bg-2.jpg")})`,
+          }}
+        />
+      ),
     },
     {
       path: "topic-3",
-      element: <Topic3 />,
+      element: (
+        <TopicLayout
+          bgImage={{
+            backgroundImage: `url(${require("./assets/topic-bg-3.jpg")})`,
+          }}
+        />
+      ),
     },
     {
       path: "topic-4",
-      element: <Topic4 />,
+      element: (
+        <TopicLayout
+          bgImage={{
+            backgroundImage: `url(${require("./assets/topic-bg-4.jpg")})`,
+          }}
+        />
+      ),
     },
     {
       path: "topic-5",
-      element: <Topic5 />,
+      element: (
+        <TopicLayout
+          bgImage={{
+            backgroundImage: `url(${require("./assets/topic-bg-5.jpg")})`,
+          }}
+        />
+      ),
     },
     {
       path: "topic-5",
-      element: <Topic5 />,
+      element: (
+        <TopicLayout
+          bgImage={{
+            backgroundImage: `url(${require("./assets/topic-bg-6.jpg")})`,
+          }}
+        />
+      ),
     },
     {
       path: "accordion",
-      element: (
-        <AccordionPage />
-      ),
+      element: <AccordionPage />,
     },
   ]);
   return (
