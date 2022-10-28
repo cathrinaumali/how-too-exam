@@ -6,43 +6,42 @@ import Topic2 from "./pages/Topic2";
 import Topic3 from "./pages/Topic3";
 import Topic4 from "./pages/Topic4";
 import Topic5 from "./pages/Topic5";
+import AccordionPage from "./pages/AccordionPage";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <Home />
-      ),
+      element: <Home />,
     },
     {
       path: "topic-1",
-      element: (
-        <Topic1 />
-      ),
+      element: <Topic1 />,
     },
     {
       path: "topic-2",
-      element: (
-        <Topic2 />
-      ),
+      element: <Topic2 />,
     },
     {
       path: "topic-3",
-      element: (
-        <Topic3 />
-      ),
+      element: <Topic3 />,
     },
     {
       path: "topic-4",
-      element: (
-        <Topic4 />
-      ),
+      element: <Topic4 />,
     },
     {
       path: "topic-5",
+      element: <Topic5 />,
+    },
+    {
+      path: "topic-5",
+      element: <Topic5 />,
+    },
+    {
+      path: "accordion",
       element: (
-        <Topic5 />
+        <AccordionPage />
       ),
     },
   ]);
