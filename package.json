@@ -1,6 +1,7 @@
 {
-  "name": "how-too",
+  "name": "javascript-test",
   "version": "0.1.0",
+  "description": "HowToo js interview test",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
